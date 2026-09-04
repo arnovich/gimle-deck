@@ -1,0 +1,13 @@
+.DS_Store
+.venv/
+build/
+dist/
+*.egg-info/
+__pycache__/
+*.py[cod]
+.mypy_cache/
+.pytest_cache/
+
+# Example output
+examples/basic/basic_deck*.html
+examples/basic/basic_deck*.pdf

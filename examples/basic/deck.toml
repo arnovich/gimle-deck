@@ -1,0 +1,65 @@
+[deck]
+title = "Gimle Deck example"
+default_variant = "full"
+slides_dir = "slides"
+notes_dir = "notes"
+assets_dir = "assets"
+default_theme = "default"
+output_basename = "basic_deck"
+require_notes = true
+
+[themes.default]
+template = "themes/default/template.html"
+stylesheet = "themes/default/deck.css"
+
+[themes.minimal]
+template = "themes/minimal/template.html"
+stylesheet = "themes/minimal/deck.css"
+
+[variants]
+full = "Complete reference deck, including authoring details and appendix."
+public = "Concise overview without implementation detail or appendix."
+
+[render]
+page_width_points = 960
+page_height_points = 540
+
+[[slides]]
+slug = "title"
+
+[[slides]]
+slug = "one_source_many_decks"
+
+[[slides]]
+slug = "slide_contract"
+variants = ["full"]
+
+[[slides]]
+slug = "variants_shape_the_story"
+
+[[slides]]
+slug = "assets_stay_with_the_deck"
+
+[[slides]]
+slug = "themes_change_the_frame"
+variants = ["full"]
+
+[[slides]]
+slug = "build_artifacts"
+
+[[slides]]
+slug = "closing"
+
+[[slides]]
+slug = "manifest_reference"
+variants = ["full"]
+placement = "appendix"
+
+[[slides]]
+slug = "asset_reference"
+variants = ["full"]
+placement = "appendix"
+
+[[slides]]
+slug = "legacy_overview"
+archived = true
